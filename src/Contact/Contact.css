@@ -1,0 +1,33 @@
+.contact-container {
+  width: 100vw;
+  min-height: 30vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container > h4 {
+  margin-bottom: 18px;
+  font-family: lucida sans;
+  color: blueviolet;
+  font-style: italic;
+}
+
+.send-button {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 90px;
+}
+
+.forms-container {
+  font-family: sans-serif;
+}

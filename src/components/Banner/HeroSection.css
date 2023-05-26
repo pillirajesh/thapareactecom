@@ -1,0 +1,58 @@
+.header-container {
+  min-height: 50vh;
+  min-width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.left-container {
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 15px 20px rgb(110, 140, 203);
+}
+
+.right-container {
+  padding: 20px;
+}
+
+.button {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: 1s;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  z-index: 1.1;
+}
+
+.hero {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.left-container {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    margin-top: 40px;
+  }
+}

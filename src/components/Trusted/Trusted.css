@@ -1,0 +1,22 @@
+.trusted {
+  min-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(222, 217, 209);
+  border-radius: 10px;
+}
+
+.trusted-container {
+  min-height: 22.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.trusted > h5 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: cursive;
+}
