@@ -26,6 +26,15 @@ const Contact = () => {
           />
           <br />
           <input
+            type="text"
+            placeholder="Contact Number"
+            name="Phone Number"
+            required
+            autoComplete="off"
+            style={{ marginBottom: "10px", fontSize: "12px", padding: "5px" }}
+          />
+          <br />
+          <input
             type="email"
             placeholder="Email"
             name="Email"

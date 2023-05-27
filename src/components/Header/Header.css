@@ -1,13 +1,10 @@
 .header {
   min-height: 10vh;
-  background-color: aquamarine;
+  min-width: 100vw;
+  background-color: rgb(177, 255, 229);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  position: sticky;
-  top: 0;
-  font-family: sans-serif;
   padding: 10px;
 }
 
@@ -15,4 +12,10 @@
   height: 60px;
   width: 130px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    min-height: 10vh;
+  }
 }

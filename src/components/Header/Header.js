@@ -13,7 +13,9 @@ const Header = () => {
           className="logo"
         />
       </Link>
-      <Nav />
+      <div>
+        <Nav />
+      </div>
     </div>
   );
 };

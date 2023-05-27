@@ -9,10 +9,15 @@ import Cart from "./Cart/Cart";
 import ErrorPage from "./ErrorPage/ErrorPage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "/node_modules/bootstrap/dist/js/bootstrap.bundle";
+
+import "./components/Header/Header";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <BrowserRouter>
         <Header />
         <Routes>

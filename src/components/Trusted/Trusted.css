@@ -1,18 +1,18 @@
+.trusted-container {
+  min-height: 22.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .trusted {
   min-width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(222, 217, 209);
+  background-color: rgb(240, 215, 49);
   border-radius: 10px;
-}
-
-.trusted-container {
-  min-height: 22.5vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
 }
 
 .trusted > h5 {

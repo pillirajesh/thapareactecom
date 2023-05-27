@@ -5,11 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 .left-container {
-  width: 60%;
+  width: 55%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 10px 15px 20px rgb(110, 140, 203);
@@ -40,16 +39,16 @@
   border-radius: 10px;
 }
 
-.left-container {
-  margin-right: 100px;
-}
-
 @media screen and (max-width: 767px) {
   .header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .left-container {
+    width: 100%;
   }
 
   .hero {

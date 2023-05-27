@@ -4,11 +4,6 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif, "Shadows Into Light", cursive, "Teko", sans-serif, "Monoton",
     cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  box-sizing: border-box;
+  padding: 0;
 }

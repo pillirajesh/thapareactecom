@@ -1,7 +1,22 @@
-.footer-container {
-  min-height: 20vh;
+.footer-main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 60vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(40, 40, 80);
+  margin-top: 30px;
+  position: relative;
+  width: 95vw;
+  border-radius: 10px;
 }
 
 .footer {
@@ -11,9 +26,60 @@
   background-color: pink;
   width: 55vw;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
   min-height: 150px;
+  position: relative;
+  top: -20px;
+}
+
+.footer-sub {
+  min-height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  color: white;
+  padding: 20px;
+}
+
+.footer-about {
+  width: 15%;
+}
+
+.footer-subscribe {
+  width: 15%;
+}
+
+.footer-follow {
+  width: 15%;
+}
+
+.footer-contact {
+  width: 15%;
+}
+
+.social-icon {
+  border: 2px solid white;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.call {
+  border: none;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact > p {
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 767px) {
@@ -28,5 +94,51 @@
     width: 100px;
     margin-top: 15px;
     font-size: 12px;
+  }
+
+  .footer-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-about {
+    width: 60%;
+    border: 1px solid rgb(223, 175, 53);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .footer-subscribe {
+    width: 60%;
+    border: 1px solid rgb(223, 175, 53);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 5px;
+  }
+
+  .footer-follow {
+    width: 60%;
+    border: 1px solid rgb(223, 175, 53);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 5px;
+  }
+
+  .footer-contact {
+    width: 60%;
+    border: 1px solid rgb(223, 175, 53);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 5px;
+  }
+
+  .footer-container {
+    margin-bottom: 20px;
   }
 }
