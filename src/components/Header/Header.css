@@ -13,9 +13,3 @@
   width: 130px;
   border-radius: 5px;
 }
-
-@media screen and (max-width: 767px) {
-  .header {
-    min-height: 10vh;
-  }
-}

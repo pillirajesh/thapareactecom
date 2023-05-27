@@ -42,4 +42,11 @@
   .bg-light {
     background-color: black;
   }
+
+  .collapse {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
 }
