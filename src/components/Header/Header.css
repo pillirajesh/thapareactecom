@@ -1,7 +1,7 @@
 .header {
   min-height: 10vh;
   min-width: 100vw;
-  background-color: rgb(17, 17, 82);
+  background-color: rgb(40, 40, 80);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,17 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 100vw;
+}
+
+.error-container > h5 {
+  font-family: cursive;
+}
+
+.error-container > p {
+  width: 80%;
+  text-align: center;
+}

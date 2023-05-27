@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.contact-container > iframe {
+  border: 1px solid grey;
+}
+
 .contact-container > h4 {
   margin-bottom: 18px;
   font-family: lucida sans;
