@@ -6,7 +6,7 @@ import "./Nav.css";
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-md navbar-light " id="b">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
