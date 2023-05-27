@@ -97,6 +97,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className="terms-conditions-container">
+          <div className="terms-conditions">
+            <p>@{new Date().getFullYear()} PilliEkart. All Rights Reserved.</p>
+            <div>
+              <p>PRIVACY POLICY</p>
+              <p>TERMS AND CONDITIONS</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
