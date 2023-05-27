@@ -9,13 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(145, 147, 133);
+  background-color: rgb(112, 106, 106);
   width: 95vw;
   font-family: seoe UI;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 10px;
+  color: white;
 }
 
 .first {
@@ -23,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: rgb(212, 39, 180);
   height: 120px;
   padding: 10px;
   border-radius: 10px;
@@ -44,7 +45,7 @@
   height: 100px;
   padding: 20px;
   border-radius: 5px;
-  background-color: pink;
+  background-color: rgb(212, 39, 180);
   margin-bottom: 10px;
 }
 
@@ -56,7 +57,7 @@
   height: 120px;
   padding: 10px;
   border-radius: 10px;
-  background-color: pink;
+  background-color: rgb(212, 39, 180);
   width: 300px;
 }
 
@@ -75,10 +76,10 @@
   }
 
   .first {
-    width: 80%;
+    width: 60%;
     border-radius: 10px;
     margin-bottom: 20px;
-    height: 150px;
+    height: 120px;
     margin-top: 20px;
   }
 
@@ -89,10 +90,10 @@
   }
 
   .last {
-    width: 80%;
+    width: 60%;
     border-radius: 10px;
     margin-top: 10px;
-    height: 150px;
+    height: 120px;
     margin-bottom: 20px;
   }
 }

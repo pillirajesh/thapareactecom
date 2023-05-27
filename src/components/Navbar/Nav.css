@@ -4,15 +4,15 @@
 
 .link {
   text-decoration: none;
-  color: black;
+  color: rgb(235, 226, 226);
   margin-right: 10px;
   font-size: 17px;
   font-weight: 400;
 }
 
 .link:hover {
-  color: rgb(219, 62, 30);
-  font-style: italic;
+  color: rgb(218, 23, 192);
+  font-weight: 700;
 }
 
 .cart-trolley-link {
@@ -39,12 +39,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .bg-light {
-    background-color: black;
-  }
-
   .collapse {
-    background-color: white;
+    background-color: rgb(46, 17, 113);
     text-align: center;
     border-radius: 10px;
     padding: 10px;
