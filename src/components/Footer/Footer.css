@@ -133,6 +133,7 @@
     justify-content: center;
     align-items: center;
     min-height: 62vh;
+    margin-top: 45px;
   }
 
   .footer-about {
@@ -141,6 +142,7 @@
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+    transform: translateY(-50);
   }
 
   .footer-subscribe {
@@ -193,7 +195,7 @@
     width: 100%;
     border: 1px solid rgb(223, 175, 53);
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     border-radius: 5px;
     font-size: 5px;
     height: 120px;
@@ -204,7 +206,7 @@
     width: 100%;
     border: 1px solid rgb(223, 175, 53);
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     border-radius: 5px;
     font-size: 10px;
     height: 120px;
