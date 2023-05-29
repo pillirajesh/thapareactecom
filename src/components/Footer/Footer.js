@@ -11,16 +11,21 @@ const Footer = () => {
       <div className="footer-container">
         <section className="footer">
           <div>
-            <h6 style={{ fontFamily: "cursive", fontSize: "15px" }}>
+            <h4 style={{ fontFamily: "fantasy", fontSize: "13px" }}>
               Ready to get started?
-            </h6>
-            <h5 style={{ fontFamily: "cursive", fontSize: "18px" }}>
-              Talk to us today
+            </h4>
+            <h5 style={{ fontFamily: "cursive", fontSize: "16px" }}>
+              Talk to us today...
             </h5>
           </div>
 
           <Link to="/contact">
-            <button className="button">GET STARTED </button>
+            <button
+              className="button"
+              style={{ fontSize: "12px", fontFamily: "cursive" }}
+            >
+              GET STARTED
+            </button>
           </Link>
         </section>
         <div className="footer-sub">
@@ -37,7 +42,7 @@ const Footer = () => {
             method="POST"
             action="https://formspree.io/f/xzbqqjnr"
           >
-            <h4 style={{ fontFamily: "cursive", fontSize: "16px" }}>
+            <h4 style={{ fontFamily: "cursive", fontSize: "14px" }}>
               Subscribe to get important updates regading new stock and offers.
             </h4>
             <input
@@ -94,6 +99,28 @@ const Footer = () => {
             <div className="contact">
               <FiPhoneCall className="social-icon call" />
               <p>+91 9028513324</p>
+            </div>
+          </div>
+          <div className="mobile-view-follow">
+            <div className="footer-follow-mobile">
+              <h4 style={{ fontFamily: "cursive", fontSize: "18px" }}>
+                Follow Us
+              </h4>
+
+              <div className="social-img-container">
+                <FaYoutube className="social-icon" />
+                <FaFacebook className="social-icon" />
+                <FaInstagram className="social-icon" />
+              </div>
+            </div>
+            <div className="footer-contact-mobile">
+              <h4 style={{ fontFamily: "cursive", fontSize: "18px" }}>
+                Call Us
+              </h4>
+              <div className="contact">
+                <FiPhoneCall className="social-icon call" />
+                <p>+91 9028513324</p>
+              </div>
             </div>
           </div>
         </div>

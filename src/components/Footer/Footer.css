@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(40, 40, 80);
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
   width: 95vw;
   border-radius: 10px;
@@ -21,27 +21,29 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: pink;
-  width: 55vw;
+  width: 35vw;
   border-radius: 10px;
-  margin-top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 20px;
-  min-height: 110px;
+  min-height: 10vh;
   position: relative;
-  top: -20px;
+  top: -30px;
 }
 
 .footer-sub {
-  min-height: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 95vw;
   color: white;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 60px;
   border-bottom: 1px solid gray;
+  height: 150px;
 }
 
 .footer-about {
@@ -92,10 +94,14 @@
   justify-content: space-around;
   align-items: center;
   color: whitesmoke;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-family: cursive;
-  font-size: 14px;
+  font-size: 8px;
+}
+
+.mobile-view-follow {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -104,10 +110,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50vw;
+    padding: 20px;
+  }
+
+  .social-img-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
   }
 
   .button {
-    width: 100px;
+    width: 120px;
     margin-top: 15px;
     font-size: 12px;
   }
@@ -115,8 +130,9 @@
   .footer-sub {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    min-height: 62vh;
   }
 
   .footer-about {
@@ -143,6 +159,7 @@
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 5px;
+    display: none;
   }
 
   .footer-contact {
@@ -152,9 +169,44 @@
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 5px;
+    display: none;
   }
 
   .footer-container {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-view-follow {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 76vw;
+    margin-bottom: 20px;
+  }
+
+  .footer-follow-mobile {
+    width: 100%;
+    border: 1px solid rgb(223, 175, 53);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 5px;
+    height: 120px;
+    margin-right: 10px;
+  }
+
+  .footer-contact-mobile {
+    width: 100%;
+    border: 1px solid rgb(223, 175, 53);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    height: 120px;
   }
 }

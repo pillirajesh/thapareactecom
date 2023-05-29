@@ -1,14 +1,14 @@
 import React from "react";
-import "./HeroSection.css";
+import "./BannerSection.css";
 import { Link } from "react-router-dom";
 
 const HeroSection = (props) => {
   const { myData } = props;
   const { name } = myData;
   return (
-    <div className="header-container ">
+    <div className="banner-container ">
       <div className="left-container">
-        <h4 style={{ fontFamily: "Segoe UI" }}>Welcome to</h4>
+        <h4 style={{ fontFamily: "monospace" }}>Welcome to</h4>
         <h1 style={{ fontFamily: "Monoton", color: "blue" }}>{name}</h1>
         <p
           style={{ width: "100%", fontFamily: "cursive", color: "blueviolet" }}

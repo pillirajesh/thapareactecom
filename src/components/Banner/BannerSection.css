@@ -1,6 +1,5 @@
-.header-container {
-  min-height: 50vh;
-  min-width: 100vw;
+.banner-container {
+  width: 100vw;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -40,7 +39,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header-container {
+  .banner-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +51,6 @@
   }
 
   .hero {
-    margin-top: 40px;
+    width: 100%;
   }
 }

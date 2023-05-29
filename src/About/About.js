@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../components/Banner/HeroSection";
+import BannerSection from "../components/Banner/BannerSection";
 import Services from "../components/Services/Services";
 import Trusted from "../components/Trusted/Trusted";
 
@@ -9,7 +9,7 @@ const About = () => {
   };
   return (
     <div>
-      <HeroSection myData={data} />
+      <BannerSection myData={data} />
       <Services />
       <Trusted />
     </div>
