@@ -1,0 +1,160 @@
+.single-product-parent-container {
+  padding-top: 20px;
+}
+
+.single-image {
+  width: 5%;
+}
+
+.images-container {
+  padding-left: 0px;
+  list-style-type: none;
+  width: 35vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 40px;
+  padding-right: 40px;
+}
+
+.images-unordered-list {
+  list-style-type: none;
+}
+
+.images-list {
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.single-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.single-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 30vh;
+}
+
+.single-product-specifications-container {
+  width: 50vw;
+  margin-bottom: 20px;
+  min-height: 20vh;
+  padding: 20px;
+}
+
+.single-product-specifications-container > h3 {
+  text-transform: capitalize;
+  line-height: 15px;
+  color: blueviolet;
+}
+
+.brand {
+  text-transform: capitalize;
+  font-family: cursive;
+}
+
+.single-product-specifications-container > h6 {
+  text-decoration: line-through;
+  color: red;
+  line-height: 5px;
+}
+
+.description {
+  font-family: "Gill Sans";
+  width: 80%;
+  margin-top: 15px;
+}
+
+.react-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.each-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.each-icon-container > p {
+  margin-top: 10px;
+  font-family: cursive;
+  color: blue;
+  font-size: 13px;
+}
+
+.icon {
+  border: 1px solid rgb(24, 23, 24);
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 40px;
+  color: blueviolet;
+}
+
+.colors-container {
+  padding-left: 0px;
+  width: 20%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.quantity {
+  border: 2px solid goldenrod;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.symbol {
+  font-size: 30px;
+  border: 1px solid rgb(175, 168, 168);
+}
+
+@media screen and (max-width: 767px) {
+  .single-product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .single-image {
+    width: 90%;
+    margin-left: 80px;
+  }
+
+  .images-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .single-product-specifications-container {
+    width: 80%;
+    border: 1px solid rgb(177, 172, 172);
+    border-radius: 5px;
+  }
+
+  .react-icons-container {
+    width: 100%;
+  }
+}

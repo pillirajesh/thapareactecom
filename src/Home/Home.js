@@ -3,6 +3,7 @@ import BannerSection from "../components/Banner/BannerSection";
 import Services from "../components/Services/Services";
 import Trusted from "../components/Trusted/Trusted";
 import "./Home.css";
+import FeatureProduct from "../components/FeatureProduct/FeatureProduct";
 
 const Home = () => {
   const data = {
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div className="con">
       <BannerSection myData={data} />
+      <FeatureProduct />
       <Services />
       <Trusted />
     </div>

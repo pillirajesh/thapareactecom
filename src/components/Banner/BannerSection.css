@@ -13,6 +13,10 @@
   box-shadow: 10px 15px 20px rgb(110, 140, 203);
 }
 
+.left-container > p {
+  font-size: 14px;
+}
+
 .right-container {
   padding: 20px;
 }

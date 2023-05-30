@@ -1,0 +1,38 @@
+.product-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.8s;
+  align-items: center;
+}
+
+.product-container:hover {
+  transform: scale(1.1);
+  z-index: 1.1;
+}
+
+.name-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%;
+  color: blueviolet;
+}
+
+.image {
+  width: 68%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px rgb(148, 193, 208);
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .product-container {
+    width: 80vw;
+  }
+}
