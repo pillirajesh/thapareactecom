@@ -19,18 +19,8 @@ const SingleProduct = () => {
 
   const { id } = useParams();
 
-  const {
-    name,
-    company,
-    price,
-    description,
-    category,
-    stock,
-    stars,
-    reviews,
-    colors,
-    image,
-  } = singleProduct;
+  const { name, company, price, description, category, stock, stars, image } =
+    singleProduct;
 
   useEffect(() => {
     getSingleProduct(`${url}?id=${id}`);
@@ -63,6 +53,7 @@ const SingleProduct = () => {
       </Link>
       <span>/{category}</span>
       <div className="single-product-container">
+        {/* 
         <div className="images-container">
           <img
             src={image[0].url}
@@ -70,6 +61,7 @@ const SingleProduct = () => {
             className="single-image"
           />
         </div>
+         */}
         <div className="single-product-specifications-container">
           <h3>{name}</h3>
           <p>Rating: {stars}</p>
