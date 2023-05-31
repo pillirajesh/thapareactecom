@@ -1,0 +1,23 @@
+.flex-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .flex-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+    width: 70vw;
+    margin-left: 100px;
+  }
+}

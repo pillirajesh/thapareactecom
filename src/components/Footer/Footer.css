@@ -24,14 +24,14 @@
   justify-content: space-between;
   align-items: center;
   background-color: pink;
-  width: 35vw;
   border-radius: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 20px;
-  min-height: 10vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
   position: relative;
-  top: -30px;
+  top: -60px;
+  min-height: 15vh;
+  width: 40vw;
 }
 
 .footer-sub {
@@ -42,7 +42,6 @@
   color: white;
   padding-top: 20px;
   padding-bottom: 60px;
-  border-bottom: 1px solid gray;
   height: 150px;
 }
 
@@ -87,6 +86,7 @@
 
 .terms-conditions-container {
   width: 80vw;
+  margin-top: 10px;
 }
 
 .terms-conditions {
@@ -98,6 +98,8 @@
   margin-bottom: 5px;
   font-family: cursive;
   font-size: 8px;
+  border-top: 1px solid gray;
+  padding-top: 15px;
 }
 
 .mobile-view-follow {
@@ -110,8 +112,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 60vw;
     padding: 20px;
+    min-height: 10vh;
+    margin-bottom: 20px;
   }
 
   .social-img-container {
@@ -143,6 +147,7 @@
     margin-bottom: 20px;
     border-radius: 5px;
     transform: translateY(-50);
+    margin-top: 20px;
   }
 
   .footer-subscribe {
@@ -188,7 +193,7 @@
     justify-content: space-around;
     align-items: center;
     width: 76vw;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .footer-follow-mobile {
@@ -210,5 +215,9 @@
     border-radius: 5px;
     font-size: 10px;
     height: 120px;
+  }
+
+  .terms-conditions {
+    margin-top: 25px;
   }
 }

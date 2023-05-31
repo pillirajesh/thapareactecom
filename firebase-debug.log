@@ -110,3 +110,99 @@
     at process.processTimers (node:internal/timers:507:7)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-05-30T18:56:51.344Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T18:56:51.349Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-30T18:56:51.350Z] CLI Version:   12.2.1
+[debug] [2023-05-30T18:56:51.351Z] Platform:      win32
+[debug] [2023-05-30T18:56:51.351Z] Node Version:  v18.13.0
+[debug] [2023-05-30T18:56:51.354Z] Time:          Wed May 31 2023 00:26:51 GMT+0530 (India Standard Time)
+[debug] [2023-05-30T18:56:51.354Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T18:56:51.557Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T18:56:51.559Z] > authorizing via signed-in user (pillirajesh05@gmail.com)
+[debug] [2023-05-30T18:56:51.559Z] [iam] checking project e-kart-e88fa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-30T18:56:51.564Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-e88fa:testIamPermissions [none]
+[debug] [2023-05-30T18:56:51.565Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-e88fa:testIamPermissions x-goog-quota-user=projects/e-kart-e88fa
+[debug] [2023-05-30T18:56:51.566Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-e88fa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T18:56:54.191Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-e88fa:testIamPermissions 200
+[debug] [2023-05-30T18:56:54.193Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-kart-e88fa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T18:56:54.198Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-kart-e88fa [none]
+[debug] [2023-05-30T18:56:55.194Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-kart-e88fa 200
+[debug] [2023-05-30T18:56:55.194Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-kart-e88fa {"projectId":"e-kart-e88fa","projectNumber":"895723641358","displayName":"E-Kart","name":"projects/e-kart-e88fa","resources":{"hostingSite":"e-kart-e88fa"},"state":"ACTIVE","etag":"1_5db4fa1b-7c25-4e39-b7ce-c2e642c16f68"}
+[info] 
+[info] === Deploying to 'e-kart-e88fa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-30T18:56:55.226Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions [none]
+[debug] [2023-05-30T18:56:55.226Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-30T18:56:57.248Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions 200
+[debug] [2023-05-30T18:56:57.248Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions {"name":"projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[e-kart-e88fa]: beginning deploy... 
+[info] i  hosting[e-kart-e88fa]: found 10 files in build 
+[debug] [2023-05-30T18:57:16.392Z] [hosting] uploading with 200 concurrency
+[debug] [2023-05-30T18:57:18.674Z] [hosting] hash cache [YnVpbGQ] stored for 10 files
+[debug] [2023-05-30T18:57:18.675Z] [hosting][hash queue][FINAL] {"max":2244,"min":7,"avg":267.9,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":2271}
+[debug] [2023-05-30T18:57:18.676Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca:populateFiles [none]
+[debug] [2023-05-30T18:57:18.677Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca:populateFiles {"files":{"/images/google.png":"f884b7f88ed8f4c5c548bbfc4f972a67d4700c9078ad4baf5bf82dfb10bb2e49","/images/hero.jpg":"118a13cab5a566a01fae227bae6560ccd6c14908a23fe251cfdf9ba1763d0579","/images/logo.png":"ae667df435f1ccb2734fd5ac37e081d12c7444d021e9d410ec6efe26038e861d","/asset-manifest.json":"d6efee20af87b2b7c1765c75dae0daeb3c1094a9496f9d6cb556d7624356502d","/index.html":"3c2a889a350e0c880f662778affe554921566e2751bf79b37cf06707ad0f0862","/static/js/main.1ceddebb.js.LICENSE.txt":"abd7b4c96d16441ee5eea74105e568b5b0477bc983d68aecdae5384aba0053dd","/static/css/main.8db00659.css":"d8fbc42ccc8a7e596a3215f6ad9b455b0f06d860d93d19bb0262eb12692fb8fd","/static/js/main.1ceddebb.js":"6be03ce45692d7be4dfd6e51a906a884c8c9d0980a2bc52d9f6ed6ba9da19914","/static/css/main.8db00659.css.map":"9d3f0ca9728c32ea927906564c4d1a20457a2dea6a678ed56d74023a4601961a","/static/js/main.1ceddebb.js.map":"27410147b30fb1d32734cb1d70fd44edeaabfe8bd8474cd777f4cb22b50cdf7b"}}
+[debug] [2023-05-30T18:57:20.386Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca:populateFiles 200
+[debug] [2023-05-30T18:57:20.387Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca:populateFiles {"uploadRequiredHashes":["3c2a889a350e0c880f662778affe554921566e2751bf79b37cf06707ad0f0862","6be03ce45692d7be4dfd6e51a906a884c8c9d0980a2bc52d9f6ed6ba9da19914","d6efee20af87b2b7c1765c75dae0daeb3c1094a9496f9d6cb556d7624356502d","27410147b30fb1d32734cb1d70fd44edeaabfe8bd8474cd777f4cb22b50cdf7b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files"}
+[debug] [2023-05-30T18:57:20.392Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/3c2a889a350e0c880f662778affe554921566e2751bf79b37cf06707ad0f0862 [none]
+[debug] [2023-05-30T18:57:20.392Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/3c2a889a350e0c880f662778affe554921566e2751bf79b37cf06707ad0f0862 [stream]
+[debug] [2023-05-30T18:57:20.397Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/6be03ce45692d7be4dfd6e51a906a884c8c9d0980a2bc52d9f6ed6ba9da19914 [none]
+[debug] [2023-05-30T18:57:20.397Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/6be03ce45692d7be4dfd6e51a906a884c8c9d0980a2bc52d9f6ed6ba9da19914 [stream]
+[debug] [2023-05-30T18:57:20.400Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/d6efee20af87b2b7c1765c75dae0daeb3c1094a9496f9d6cb556d7624356502d [none]
+[debug] [2023-05-30T18:57:20.401Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/d6efee20af87b2b7c1765c75dae0daeb3c1094a9496f9d6cb556d7624356502d [stream]
+[debug] [2023-05-30T18:57:20.404Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/27410147b30fb1d32734cb1d70fd44edeaabfe8bd8474cd777f4cb22b50cdf7b [none]
+[debug] [2023-05-30T18:57:20.404Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/27410147b30fb1d32734cb1d70fd44edeaabfe8bd8474cd777f4cb22b50cdf7b [stream]
+[debug] [2023-05-30T18:57:20.407Z] [hosting][populate queue][FINAL] {"max":1730,"min":1730,"avg":1730,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1745}
+[debug] [2023-05-30T18:57:20.408Z] [hosting] uploads queued: 4
+[debug] [2023-05-30T18:57:22.628Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/3c2a889a350e0c880f662778affe554921566e2751bf79b37cf06707ad0f0862 200
+[debug] [2023-05-30T18:57:22.628Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/3c2a889a350e0c880f662778affe554921566e2751bf79b37cf06707ad0f0862 [stream]
+[debug] [2023-05-30T18:57:22.781Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/d6efee20af87b2b7c1765c75dae0daeb3c1094a9496f9d6cb556d7624356502d 200
+[debug] [2023-05-30T18:57:22.781Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/d6efee20af87b2b7c1765c75dae0daeb3c1094a9496f9d6cb556d7624356502d [stream]
+[debug] [2023-05-30T18:57:23.188Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/6be03ce45692d7be4dfd6e51a906a884c8c9d0980a2bc52d9f6ed6ba9da19914 200
+[debug] [2023-05-30T18:57:23.189Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/6be03ce45692d7be4dfd6e51a906a884c8c9d0980a2bc52d9f6ed6ba9da19914 [stream]
+[debug] [2023-05-30T18:57:42.366Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/27410147b30fb1d32734cb1d70fd44edeaabfe8bd8474cd777f4cb22b50cdf7b 200
+[debug] [2023-05-30T18:57:42.366Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/e-kart-e88fa/versions/789a100badb941ca/files/27410147b30fb1d32734cb1d70fd44edeaabfe8bd8474cd777f4cb22b50cdf7b [stream]
+[debug] [2023-05-30T18:57:42.367Z] [hosting][upload queue][FINAL] {"max":21976,"min":2241,"avg":7351.75,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":21980}
+[info] +  hosting[e-kart-e88fa]: file upload complete 
+[debug] [2023-05-30T18:57:42.372Z] [hosting] deploy completed after 26024ms
+[debug] [2023-05-30T18:57:42.380Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "e-kart-e88fa"
+    },
+    "version": "projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca"
+  }
+]
+[info] i  hosting[e-kart-e88fa]: finalizing version... 
+[debug] [2023-05-30T18:57:42.393Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions/789a100badb941ca updateMask=status%2Cconfig
+[debug] [2023-05-30T18:57:42.393Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions/789a100badb941ca {"status":"FINALIZED","config":{}}
+[debug] [2023-05-30T18:57:43.880Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions/789a100badb941ca 200
+[debug] [2023-05-30T18:57:43.880Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/versions/789a100badb941ca {"name":"projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-05-30T18:56:57.382161Z","createUser":{"email":"pillirajesh05@gmail.com"},"finalizeTime":"2023-05-30T18:57:44.318599Z","finalizeUser":{"email":"pillirajesh05@gmail.com"}}
+[debug] [2023-05-30T18:57:43.881Z] [hosting] finalized version for e-kart-e88fa:[object Object]
+[info] +  hosting[e-kart-e88fa]: version finalized 
+[info] i  hosting[e-kart-e88fa]: releasing new version... 
+[debug] [2023-05-30T18:57:43.885Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/channels/live/releases versionName=projects%2F895723641358%2Fsites%2Fe-kart-e88fa%2Fversions%2F789a100badb941ca
+[debug] [2023-05-30T18:57:43.886Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/channels/live/releases {}
+[debug] [2023-05-30T18:57:45.494Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/channels/live/releases 200
+[debug] [2023-05-30T18:57:45.495Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/e-kart-e88fa/channels/live/releases {"name":"projects/895723641358/sites/e-kart-e88fa/channels/live/releases/1685473065153000","version":{"name":"projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-05-30T18:56:57.382161Z","createUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"},"finalizeTime":"2023-05-30T18:57:44.318599Z","finalizeUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}},"type":"DEPLOY","releaseTime":"2023-05-30T18:57:45.153Z","releaseUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}}
+[debug] [2023-05-30T18:57:45.495Z] [hosting] release: {"name":"projects/895723641358/sites/e-kart-e88fa/channels/live/releases/1685473065153000","version":{"name":"projects/895723641358/sites/e-kart-e88fa/versions/789a100badb941ca","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-05-30T18:56:57.382161Z","createUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"},"finalizeTime":"2023-05-30T18:57:44.318599Z","finalizeUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}},"type":"DEPLOY","releaseTime":"2023-05-30T18:57:45.153Z","releaseUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}}
+[info] +  hosting[e-kart-e88fa]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/e-kart-e88fa/overview
+[info] Hosting URL: https://e-kart-e88fa.web.app
+[debug] [2023-05-30T18:58:16.590Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.

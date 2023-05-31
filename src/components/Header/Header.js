@@ -60,11 +60,12 @@ const Header = () => {
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="offcanvas offcanvas-end text-bg-dark"
+            className="offcanvas offcanvas-end "
             tabindex="-1"
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"

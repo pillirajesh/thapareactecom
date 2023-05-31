@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import "./SingleProduct";
 import { Link, useParams } from "react-router-dom";
 import { useProductContext } from "../context/productcontext";
-import { RotatingLines } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 import PriceFormat from "../PriceFormat";
 import "./SingleProduct.css";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import { GiCheckedShield } from "react-icons/gi";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { CgArrowsExchangeAlt } from "react-icons/cg";
+import MyImages from "../MyImage/MyImages";
+import Stars from "../Stars/Stars";
+import { FaCheck } from "react-icons/fa";
 
 const url = "https://api.pujakaitem.com/api/products";
 
@@ -19,8 +23,20 @@ const SingleProduct = () => {
 
   const { id } = useParams();
 
-  const { name, company, price, description, category, stock, stars, image } =
-    singleProduct;
+  const {
+    name,
+    company,
+    price,
+    description,
+    category,
+    stock,
+    stars,
+    image,
+    reviews,
+    colors,
+  } = singleProduct;
+
+  //const [color, setCurColor] = useState(colors[0]);
 
   useEffect(() => {
     getSingleProduct(`${url}?id=${id}`);
@@ -29,11 +45,14 @@ const SingleProduct = () => {
   if (isSingleLoading) {
     return (
       <div className="loader">
-        <RotatingLines
-          strokeColor="black"
-          strokeWidth="5"
-          animationDuration="0.1"
-          width="96"
+        <ThreeDots
+          height="80"
+          width="80"
+          radius="9"
+          color="blue"
+          ariaLabel="three-dots-loading"
+          wrapperStyle={{}}
+          wrapperClassName=""
           visible={true}
         />
       </div>
@@ -53,19 +72,14 @@ const SingleProduct = () => {
       </Link>
       <span>/{category}</span>
       <div className="single-product-container">
-        {/* 
         <div className="images-container">
-          <img
-            src={image[0].url}
-            alt={image[0].name}
-            className="single-image"
-          />
+          <MyImages images={image} />
         </div>
-         */}
+
         <div className="single-product-specifications-container">
           <h3>{name}</h3>
-          <p>Rating: {stars}</p>
-          <h6>MRP {<PriceFormat price={price} />}</h6>
+          <Stars reviews={reviews} stars={stars} />
+          <h6>MRP {<PriceFormat price={price + 150000} />}</h6>
           <span
             style={{
               color: "green",
@@ -73,7 +87,7 @@ const SingleProduct = () => {
               fontWeight: "bold",
             }}
           >
-            Deal of the Day: {<PriceFormat price={price - 1500} />}
+            Deal of the Day: {<PriceFormat price={price} />}
           </span>
           <p className="description">{description}</p>
           <div className="react-icons-container">
@@ -89,28 +103,72 @@ const SingleProduct = () => {
               <TbReplace className="icon" />
               <p>7 Days Replacement</p>
             </div>
+            <div className="each-icon-container">
+              <CgArrowsExchangeAlt className="icon" />
+              <p>Easy Exchange</p>
+            </div>
           </div>
           <hr />
           <p style={{ fontFamily: "cursive", color: "grey" }}>
-            Available : {stock} in stock
+            Available :{" "}
+            <span>{stock > 0 ? `${stock} In Stock` : "Out of Stock"}</span>
           </p>
           <p className="brand">Brand : {company}</p>
-          <hr />
+          <hr style={{ height: "3px", color: "red" }} />
+          {/* 
+          <p style={{ fontFamily: "cursive", marginBottom: "20px" }}>
+            Colors :{" "}
+            {colors.map((curColor, index) => {
+              return (
+                <button
+                  type="button"
+                  key={index}
+                  style={{ backgroundColor: curColor }}
+                  className={
+                    color === curColor ? "color-button active" : "color-button"
+                  }
+                  onClick={() => setCurColor(curColor)}
+                >
+                  {color === curColor ? <FaCheck className="check" /> : null}
+                </button>
+              );
+            })}
+          </p>
+          
+           */}
           <div>
             <AiOutlineMinus
               className="symbol"
               onClick={() => {
-                if (quantity > 0) {
+                if (quantity > 1) {
                   setQuantity(quantity - 1);
+                } else {
+                  setQuantity(quantity);
                 }
               }}
             />
             <span className="quantity">{quantity}</span>
             <AiOutlinePlus
               className="symbol"
-              onClick={() => setQuantity(quantity + 1)}
+              onClick={() => {
+                if (quantity < stock) {
+                  setQuantity(quantity + 1);
+                } else {
+                  setQuantity(stock);
+                }
+              }}
             />
           </div>
+          {stock > 0 && (
+            <button type="buton" className="cart-button">
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/cart"
+              >
+                Add to Cart
+              </Link>
+            </button>
+          )}
         </div>
       </div>
     </div>

@@ -33,8 +33,9 @@ const Footer = () => {
             <h4 style={{ fontFamily: "sans serif", fontSize: "18px" }}>
               Pilli E-Kart
             </h4>
-            <p style={{ fontFamily: "cursive", fontSize: "13px" }}>
-              Lorem ipsum dolor, sit amet consecteur adipiscing elit.
+            <p style={{ fontFamily: "cursive", fontSize: "12px" }}>
+              Join us on this exciting journey, and discover a world of
+              convenience, quality at our e-commerce store.
             </p>
           </div>
           <form

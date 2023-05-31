@@ -1,5 +1,5 @@
 import { useProductContext } from "../../context/productcontext";
-import { RotatingLines } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 import Product from "../../Product/Product";
 import "./FeatureProduct.css";
 
@@ -10,11 +10,14 @@ const FeatureProduct = () => {
   if (isLoading) {
     return (
       <div className="loader">
-        <RotatingLines
-          strokeColor="black"
-          strokeWidth="5"
-          animationDuration="0.1"
-          width="96"
+        <ThreeDots
+          height="80"
+          width="80"
+          radius="9"
+          color="blue"
+          ariaLabel="three-dots-loading"
+          wrapperStyle={{}}
+          wrapperClassName=""
           visible={true}
         />
       </div>

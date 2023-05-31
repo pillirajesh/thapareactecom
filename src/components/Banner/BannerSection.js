@@ -13,15 +13,18 @@ const HeroSection = (props) => {
         <p
           style={{ width: "100%", fontFamily: "cursive", color: "blueviolet" }}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Welcome to our innovative e-commerce store, where shopping becomes an
+          immersive and convenient experience like never before. We have created
+          a cutting-edge platform that caters to all your shopping needs in one
+          place. From the latest fashion trends to tech gadgets, home decor, and
+          everything in between, our store offers a vast selection of
+          high-quality products from trusted brands. Our store boasts a
+          user-friendly interface designed to enhance your shopping journey.
+          With intuitive navigation, seamless search functionality, and
+          personalized recommendations, finding the perfect item is effortless.
+          We understand the importance of convenience, so we offer multiple
+          payment options, including secure online transactions and flexible
+          payment plans to accommodate your preferences.
         </p>
         <Link to="/products">
           <button type="button" className="button">
