@@ -12,6 +12,7 @@ import { CgArrowsExchangeAlt } from "react-icons/cg";
 import MyImages from "../MyImage/MyImages";
 import Stars from "../Stars/Stars";
 import { FaCheck } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
 
 const url = "https://api.pujakaitem.com/api/products";
 
@@ -169,6 +170,10 @@ const SingleProduct = () => {
               </Link>
             </button>
           )}
+          <br />
+          <Link to="/products" className="back-icon">
+            <IoIosArrowBack />
+          </Link>
         </div>
       </div>
     </div>

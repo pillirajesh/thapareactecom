@@ -13,6 +13,7 @@ const initialState = {
   featureProducts: [],
   isSingleLoading: false,
   singleProduct: {},
+  filteredProducts: [],
 };
 
 const API = "https://api.pujakaitem.com/api/products";

@@ -1,0 +1,28 @@
+.sort-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-view {
+  margin-right: 15px;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.grid-view:hover {
+  border: 2px solid rgb(182, 181, 181);
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.list-view {
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.list-view:hover {
+  border: 2px solid rgb(182, 181, 181);
+  border-radius: 4px;
+  opacity: 1;
+}

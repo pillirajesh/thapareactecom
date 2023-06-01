@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Products.css";
 import FilterSection from "../components/FilterSection/FilterSection";
 import Sort from "../components/Sort/Sort";
 import ProductsList from "../components/ProductsList/ProductsList";
+import { useFilterContext } from "../context/filtered_context";
+import { ThreeDots } from "react-loader-spinner";
 
-const API = "https://api.pujakaitem.com/api/products";
+//const API = "https://api.pujakaitem.com/api/products";
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
+  //const [products, setProducts] = useState([]);
 
-  const getAllProducts = async () => {
+  const { filter_products, isLoading } = useFilterContext();
+
+  const [list, setList] = useState(false);
+
+  /* 
+ const getAllProducts = async () => {
     const response = await fetch(API);
     const data = await response.json();
     setProducts(data);
@@ -19,6 +26,24 @@ const Products = () => {
     getAllProducts();
   }, []);
 
+*/
+  if (isLoading) {
+    return (
+      <div className="loader">
+        <ThreeDots
+          height="80"
+          width="80"
+          radius="9"
+          color="blue"
+          ariaLabel="three-dots-loading"
+          wrapperStyle={{}}
+          wrapperClassName=""
+          visible={true}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="products-main-container">
       <div className="products-left-container">
@@ -26,11 +51,27 @@ const Products = () => {
       </div>
       <div className="products-right-container">
         <div className="products-right-container-header">
-          <Sort />
+          <Sort
+            productsCount={filter_products.length}
+            setList={setList}
+            products={filter_products}
+          />
         </div>
-        <div className="products-right-container-body">
-          {products.map((eachProduct) => {
-            return <ProductsList products={eachProduct} />;
+        <div
+          className={
+            list
+              ? "products-right-container-body-list-view"
+              : "products-right-container-body"
+          }
+        >
+          {filter_products.map((eachProduct) => {
+            return (
+              <ProductsList
+                products={eachProduct}
+                list={list}
+                key={eachProduct.id}
+              />
+            );
           })}
         </div>
       </div>

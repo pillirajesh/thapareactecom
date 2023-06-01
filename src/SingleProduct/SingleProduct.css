@@ -134,6 +134,7 @@
   border: none;
   margin-top: 15px;
   font-family: cursive;
+  margin-bottom: 10px;
 }
 
 .color-button {
@@ -153,6 +154,10 @@
 
 .active {
   opacity: 1;
+}
+
+.back-icon {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 767px) {
