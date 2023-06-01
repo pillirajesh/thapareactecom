@@ -26,3 +26,29 @@
   border-radius: 4px;
   opacity: 1;
 }
+
+.input-container > input {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .input-container > input {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .sort-header-container > p {
+    display: none;
+  }
+
+  .grid-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

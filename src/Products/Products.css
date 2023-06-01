@@ -7,14 +7,15 @@
 }
 
 .products-left-container {
-  width: 20vw;
+  width: 25vw;
   height: 70vh;
   border-right: 1px solid rgb(205, 203, 203);
   padding: 20px;
+  background-color: rgb(215, 221, 221);
 }
 
 .products-right-container {
-  width: 60vw;
+  width: 70vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -23,24 +24,26 @@
 }
 
 .products-right-container-header {
-  width: 60vw;
+  width: 70vw;
   height: 10vh;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: rgb(243, 240, 240);
   border-radius: 5px;
 }
 
 .products-right-container-body {
-  width: 60vw;
+  width: 70vw;
   height: 70vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
   overflow-y: scroll;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
 .products-right-container-body-list-view {
@@ -59,6 +62,10 @@
     background-color: rgb(243, 240, 240);
     padding: 10px;
     border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .products-right-container {
@@ -73,6 +80,8 @@
     align-items: center;
     flex-wrap: wrap;
     overflow-y: auto;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
   .products-right-container-body-list-view {

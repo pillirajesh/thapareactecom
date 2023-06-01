@@ -1,0 +1,17 @@
+.filter-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input {
+  outline: none;
+  padding-left: 5px;
+  font-family: cursive;
+  color: rgb(107, 104, 104);
+  border: 1px solid rgb(87, 86, 87);
+  background-color: transparent;
+  width: 100%;
+}
