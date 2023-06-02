@@ -1,11 +1,16 @@
 const filterReducer = (state, action) => {
   switch (action.type) {
     case "LOAD_FILTER_PRODUCTS":
+      let priceList = action.payload.map((curElement) => curElement.price);
+      let maxPrice = Math.max(...priceList);
+      console.log(maxPrice);
+
       return {
         ...state,
 
         filter_products: [...action.payload],
         all_products: [...action.payload],
+        filters: { ...state.filters, maxPrice: maxPrice, price: maxPrice },
         isLoading: false,
       };
 
@@ -67,16 +72,49 @@ const filterReducer = (state, action) => {
       let { all_products } = state;
       let tempSearchedProducts = [...all_products];
 
-      const { text } = state.filters;
+      const { text, category, company, price } = state.filters;
+
       if (text) {
         tempSearchedProducts = tempSearchedProducts.filter((curElement) => {
           return curElement.name.toLowerCase().includes(text);
         });
       }
 
+      if (company !== "all") {
+        tempSearchedProducts = tempSearchedProducts.filter((curElement) => {
+          return curElement.company.toLowerCase() === company.toLowerCase();
+        });
+      }
+
+      if (category !== "all") {
+        tempSearchedProducts = tempSearchedProducts.filter((curElement) => {
+          return curElement.category === category;
+        });
+      }
+
+      if (price) {
+        tempSearchedProducts = tempSearchedProducts.filter((curElement) => {
+          return curElement.price <= price;
+        });
+      }
+
       return {
         ...state,
         filter_products: tempSearchedProducts,
+      };
+
+    case "CLEAR_FILTER":
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          text: "",
+          category: "all",
+          company: "all",
+          maxPrice: 0,
+          price: state.filters.maxPrice,
+          minPrice: state.filters.maxPrice,
+        },
       };
 
     default:

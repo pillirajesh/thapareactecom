@@ -34,8 +34,11 @@
 @media screen and (max-width: 767px) {
   .input-container > input {
     display: block;
-    margin-left: 10px;
+  }
+
+  .input-container {
     margin-right: 10px;
+    margin-left: 10px;
   }
 
   .input {

@@ -30,7 +30,7 @@ const Sort = ({ productsCount, setList }) => {
         />
       </div>
       <select
-        style={{ fontFamily: "bree serif" }}
+        style={{ fontFamily: "bree serif", width: "auto" }}
         id="sortButton"
         onChange={sortingProducts}
       >

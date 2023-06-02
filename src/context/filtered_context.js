@@ -11,6 +11,11 @@ const initialState = {
   isLoading: true,
   filters: {
     text: "",
+    category: "all",
+    company: "all",
+    maxPrice: 0,
+    price: 0,
+    minPrice: 0,
   },
 };
 
@@ -18,6 +23,12 @@ export const FilterContextProvider = ({ children }) => {
   const { products } = useProductContext();
 
   const [state, dispatch] = useReducer(filterReducer, initialState);
+
+  //clear filter function
+
+  const clearFilter = () => {
+    dispatch({ type: "CLEAR_FILTER" });
+  };
 
   const sortingProducts = (e) => {
     let userSelectedValue = e.target.value;
@@ -36,7 +47,7 @@ export const FilterContextProvider = ({ children }) => {
   useEffect(() => {
     dispatch({ type: "SEARCHED_VALUES" });
     dispatch({ type: "SORTING_PRODUCTS" });
-  }, [state.sorting_value, state.filters]);
+  }, [products, state.sorting_value, state.filters]);
 
   useEffect(() => {
     dispatch({ type: "LOAD_FILTER_PRODUCTS", payload: products });
@@ -44,7 +55,7 @@ export const FilterContextProvider = ({ children }) => {
 
   return (
     <FilterContext.Provider
-      value={{ ...state, sortingProducts, updateSearchedProducts }}
+      value={{ ...state, sortingProducts, updateSearchedProducts, clearFilter }}
     >
       {children}
     </FilterContext.Provider>
