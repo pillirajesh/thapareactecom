@@ -86,8 +86,8 @@ const FilterSection = () => {
         </select>
       </div>
       <div className="price-range-container">
-        <h6>Price </h6>
-        <p>
+        <h6>Price Range </h6>
+        <p style={{ fontSize: "13px", fontWeight: "600" }}>
           <PriceFormat price={price} />
         </p>
         <input

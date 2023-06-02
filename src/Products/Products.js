@@ -49,7 +49,7 @@ const Products = () => {
       <div className="products-left-container">
         <FilterSection />
       </div>
-      <div className="products-right-container">
+      <div className="products-right-container container">
         <div className="products-right-container-header">
           <Sort
             productsCount={filter_products.length}
@@ -57,11 +57,12 @@ const Products = () => {
             products={filter_products}
           />
         </div>
+
         <div
           className={
             list
               ? "products-right-container-body-list-view"
-              : "products-right-container-body"
+              : "products-right-container-body "
           }
         >
           {filter_products.map((eachProduct) => {

@@ -1,10 +1,12 @@
-import styled from "styled-components";
+import "./Cart.css";
 
 const Cart = () => {
-  return <div>Cart</div>;
+  return <div className="cart-container">Cart</div>;
 };
 
-const Wrapper = styled.section`
+export default Cart;
+
+/*const Wrapper = styled.section`
   padding: 9rem 0;
 
   .grid-four-column {
@@ -50,7 +52,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .cart-image--name {
-    /* background-color: red; */
+  
     align-items: center;
     display: grid;
     gap: 1rem;
@@ -177,6 +179,4 @@ const Wrapper = styled.section`
       }
     }
   }
-`;
-
-export default Cart;
+`;  */

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 10px;
 }
 
 .input {
@@ -38,21 +39,24 @@
 }
 
 .category-container > h6 {
-  font-family: fantasy;
+  font-family: cursive;
   color: rgb(75, 31, 171);
+  font-weight: 800;
 }
 
 .category-button {
   border: none;
   background-color: transparent;
   font-family: cochin;
-  color: rgb(154, 66, 171);
+  font-size: 15px;
   text-transform: capitalize;
   border-radius: 5px;
+  color: rgb(139, 138, 138);
 }
 
 .category-button:hover {
   border: 1px solid rgb(242, 179, 19);
+  color: rgb(154, 66, 171);
 }
 
 .company {
@@ -69,9 +73,10 @@
 }
 
 .company-container > h6 {
-  font-family: fantasy;
+  font-family: cursive;
   color: rgb(75, 31, 171);
   margin-top: 10px;
+  font-weight: 800;
 }
 
 .price-range-container {
@@ -81,9 +86,10 @@
 }
 
 .price-range-container > h6 {
-  font-family: fantasy;
+  font-family: cursive;
   color: rgb(75, 31, 171);
-  margin-top: 10px;
+  margin-top: 12px;
+  font-weight: 800;
 }
 
 .clear-filter-button-container {

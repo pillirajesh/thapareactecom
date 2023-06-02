@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830025.jpg?w=1060&t=st=1685712162~exp=1685712762~hmac=73a5030cc3d72760874812d6353f401d7368be470c97834c1c4c28fbc31f7fbc");
 }
 
 .contact-container > iframe {

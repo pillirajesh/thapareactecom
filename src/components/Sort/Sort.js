@@ -29,17 +29,13 @@ const Sort = ({ productsCount, setList }) => {
           className="input"
         />
       </div>
-      <select
-        style={{ fontFamily: "bree serif", width: "auto" }}
-        id="sortButton"
-        onChange={sortingProducts}
-      >
+      <select className="sort-label" id="sortButton" onChange={sortingProducts}>
         <option value="highest" selected>
-          Price(highest)
+          Price (highest)
         </option>
-        <option value="lowest">Price(lowest)</option>
-        <option value="a-z">Price(a-z)</option>
-        <option value="z-a">Price(z-a)</option>
+        <option value="lowest">Price (lowest)</option>
+        <option value="a-z">Price (a-z)</option>
+        <option value="z-a">Price (z-a)</option>
       </select>
     </div>
   );
